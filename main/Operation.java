@@ -36,7 +36,6 @@ public class Operation {
 		switch (pos) {
 			case 1:
 				gameBoard[0][0] = symbol;
-				System.out.println("add you choice at 1st position");
 				break;
 			case 2:
 				gameBoard[0][2] = symbol;
@@ -92,11 +91,11 @@ public class Operation {
 		
 		for(List l : winning) {
 			if(playerPositions.containsAll(l)) {
-				return "Congo you won";
+				return "Congo you winnnn!!!!! THANK YOU:)";
 			}else if(cpuPositions.containsAll(l)) {
-				return "CPU won";
+				return "CPU won!! Better Luch Next Time :)";
 			}else if(playerPositions.size() + cpuPositions.size() == 9) {
-				return "Tie";
+				return "Tie...";
 			}
 		}
 		
@@ -133,13 +132,13 @@ public class Operation {
 		placePiece(gameBoard, cpuPos, "cpu");
 			
 		result= checkWinner();
-		System.out.println("hiiiii");
 		if(result.length()>0) {
 			System.out.println(result);		
 			break;
 			}
 		printGameBoard(gameBoard);
-		System.out.println("hiiiii");
+		System.out.println("are u enjoying???");
+
 		
 	}
 	}
